@@ -7,9 +7,9 @@ export default function Home() {
       <NavBar
         title="Berean Christian Fellowship"
         links={[
-          { text: "doctrine", url: "/" },
-          { text: "Who we are", url: "/" },
-          { text: "Contact", url: "/" },
+          { text: "doctrine", url: "/doctrine" },
+          { text: "Sermons", url: "/sermons" },
+          { text: "Contact", url: "/contact" }
         ]}
       />{" "}
       <Head>
@@ -19,23 +19,11 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Berean Christian Fellowship</h1>
         <div>
-          this page is under construction, drop a pull request in the github if
-          you want to help out
-        </div>
-        <div>
-          Tech wise the plan is to use react/nextjs, netifly-cms, and material
-          ui.
+          We meet each Sunday, 10 AM, at the Cocolalla Community Hall
+          <p> 1557 Fish Creek Rd, Cocolalla, ID 83813, USA</p>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/zachkohl/bereanchristianfellowship"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github link
-        </a>
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }
